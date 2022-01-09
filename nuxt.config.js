@@ -14,7 +14,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio',
+    title: 'ぽーとふぉりお',
     htmlAttrs: {
       lang: 'en'
     },
@@ -25,7 +25,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel:'stylesheet',href:'https://fonts.googleapis.com/css2?family=Condiment&family=M+PLUS+1p:wght@100;300;400&family=Mr+Dafoe&family=Oswald:wght@200;300;400;500&family=Work+Sans:wght@100&family=Zen+Maru+Gothic&display=swap'}
     ]
   },
 
@@ -46,8 +47,17 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/tailwindcss',
+    'nuxt-fontawesome',
   ],
-
+  fontawesome: {
+    imports: [
+      {
+      set: '@fortawesome/free-solid-svg-icons',
+      icons: ['fas']
+      },
+    ]
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },

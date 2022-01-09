@@ -1,7 +1,16 @@
 <template>
-  <Tutorial/>
+  <div>
+    <About/>
+    <Skills/>
+    <Works/>
+  </div>
 </template>
 
 <script>
-export default {}
+import Skills from "../components/Skills";
+import Works from "../components/Works";
+import About from "../components/About";
+export default {
+  components: {About, Works, Skills}
+}
 </script>
